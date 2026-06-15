@@ -1,0 +1,61 @@
+
+body {
+    background-color: #F0FFFF; 
+    text-align: center;      
+    padding: 50px 0;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222222;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.brand {
+    max-width: 800px;
+    margin: 0 auto 100px auto; 
+}
+
+
+.brand img {
+    width: 40%;    
+    height: auto;   
+    margin: 10px;    
+    display: inline-block;
+}
+
+.brand img:hover {
+    transform: scale(1.5); 
+}
+
+/* 글자 스타일 */
+.brand h2 { font-size: 16px; margin-top: 20px; color: #222222; }
+.brand p { font-size: 11px; color: #666666; }
+.back { margin-top: 50px; }
+.back a { color: #222222; font-size: 13px; }
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-color: #F0FFFF; 
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    body {
+       
+    }
+    
+    
+    .brand img {
+        width: 85%;      
+        
+    }
+}
