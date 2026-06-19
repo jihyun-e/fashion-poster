@@ -58,4 +58,19 @@ body {
         width: 85%;      
         
     }
+
+
+.brand h2 {
+        font-size: 15px !important;    
+        white-space: nowrap !important; 
+        word-break: keep-all !important; 
+    }
+
+
+
+
+
+
+
+    
 }

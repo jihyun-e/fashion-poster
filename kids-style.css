@@ -31,7 +31,8 @@ body {
 }
 
 
-.brand h2 { font-size: 16px; margin-top: 20px; color: #222222; }
+
+ .brand h2 { font-size: 16px; margin-top: 20px; color: #222222; }
 .brand p { font-size: 11px; color: #666666; }
 .back { margin-top: 50px; }
 .back a { color: #222222; font-size: 13px; }
@@ -47,17 +48,29 @@ body {
 }
 
 
-/* ❌ 기존 맨 밑의 900px 미디어 쿼리를 지우고 이걸로 덮어쓰기 */
+
 @media screen and (max-width: 900px) {
     body {
         background-color: #FAEBD7; 
     }
     
-    /* ⚡ 날아가 있던 .brand img 선택자를 다시 정확히 적어줍니다! */
+    
     .brand img {
-        width: 85%;       /* 다른 페이지들처럼 화면 가로를 85% 차지하면서 큼직하게 보입니다! */
+        width: 85%;      
         height: auto;
-        display: block;   /* ⚡ 중요: 옆에 다른 사진이 못 오게 한 줄을 통째로 차지하게 만듭니다. */
-        margin: 20px auto; /* 한 줄에 한 장씩 가운데 정렬되도록 여백 주기 */
+        display: block;   
+        margin: 20px auto; 
     }
+
+
+.brand h2 {
+        font-size: 15px !important;    /* 글자 크기를 살짝 줄여서 여유 공간 확보 */
+        white-space: nowrap !important; /* ⚡ 핵심: 글자가 절대로 중간에 끊겨서 아래로 안 떨어지게 만듦! */
+        word-break: keep-all !important; /* 단어 단위로 붙어있게 강제 고정 */
+    }
+
+
+
+
+    
 }
