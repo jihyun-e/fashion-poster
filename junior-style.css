@@ -61,9 +61,12 @@ body {
 
 
 .brand h2 {
-        font-size: 15px !important;    
-        white-space: nowrap !important; 
+       white-space: normal !important;  
         word-break: keep-all !important; 
+        overflow-wrap: break-word !important;
+        
+        display: block !important;
+        padding: 0 10px;
     }
 
 
@@ -71,6 +74,4 @@ body {
 
 
 
-
-    
 }

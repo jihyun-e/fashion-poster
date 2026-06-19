@@ -64,13 +64,15 @@ body {
 
 
 .brand h2 {
-        font-size: 15px !important;    /* 글자 크기를 살짝 줄여서 여유 공간 확보 */
-        white-space: nowrap !important; /* ⚡ 핵심: 글자가 절대로 중간에 끊겨서 아래로 안 떨어지게 만듦! */
-        word-break: keep-all !important; /* 단어 단위로 붙어있게 강제 고정 */
+        white-space: normal !important;  
+        word-break: keep-all !important; 
+        overflow-wrap: break-word !important;
+        
+        display: block !important;
+        padding: 0 10px;
     }
 
 
 
 
-    
 }
