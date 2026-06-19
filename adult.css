@@ -1,6 +1,6 @@
 
 body {
-    background-color: #B0C4DE; 
+    background-color: #E6E6FA; 
     text-align: center;     
     padding: 50px 0;
 }
@@ -20,17 +20,17 @@ body {
 
 
 .brand img {
-    width: 40%;      
+    width: 45%;      
     height: auto;     
     margin: 10px;   
     display: inline-block;
 }
 
 .brand img:hover {
-    transform: scale(2); 
+    transform: scale(1.5); 
 }
 
-/* 글자 스타일 */
+
 .brand h2 { font-size: 16px; margin-top: 20px; color: #222222; }
 .brand p { font-size: 11px; color: #666666; }
 .back { margin-top: 50px; }
@@ -43,7 +43,7 @@ body {
 
 @media screen and (max-width: 1200px) {
     body {
-        background-color: #B0C4DE; 
+        background-color: #E6E6FA; 
     }
 }
 
@@ -55,7 +55,7 @@ body {
     
     
     .brand img {
-        width: 85%;      
+        width: 60%;      
         
     }
 }

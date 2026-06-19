@@ -34,21 +34,26 @@ h1 {
 }
 
 
+
 .kids-zone {
     top: 18vh;
-    left: 8vw;
-}
+    left: 0;
+    right: 0;
+    margin: 0 auto; 
 
 .junior-zone {
     top: 58vh;
-    right: 8vw; /* 지그재그를 위해 우측 배치 */
+    left: 0;
+    right: 0;
+    margin: 0 auto; 
 }
 
 .adult-zone {
     top: 98vh;
-    left: 8vw;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
-
 
 .poster-card {
     width: 100%;
@@ -69,9 +74,6 @@ h1 {
 }
 
 
-.poster-card.reverse a {
-    flex-direction: row-reverse;
-}
 
 
 .poster-card img {

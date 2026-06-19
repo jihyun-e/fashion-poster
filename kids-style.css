@@ -1,6 +1,6 @@
 
 body {
-    background-color: #B0C4DE; 
+    background-color:#FDF5E6; 
     text-align: center;      
     padding: 50px 0;
 }
@@ -20,14 +20,14 @@ body {
 
 
 .brand img {
-    width: 40%;       
+    width: 45%;       
     height: auto;    
     margin: 10px;  
     display: inline-block;
 }
 
 .brand img:hover {
-    transform: scale(2); 
+    transform: scale(1.5); 
 }
 
 
@@ -42,18 +42,22 @@ body {
 
 @media screen and (max-width: 1200px) {
     body {
-        background-color: #B0C4DE; 
+        background-color: #FDF5E6; 
     }
 }
 
 
+/* ❌ 기존 맨 밑의 900px 미디어 쿼리를 지우고 이걸로 덮어쓰기 */
 @media screen and (max-width: 900px) {
     body {
-        background-color: #E6E6FA; 
+        background-color: #FAEBD7; 
     }
     
-    
-        width: 85%;      
-        
+    /* ⚡ 날아가 있던 .brand img 선택자를 다시 정확히 적어줍니다! */
+    .brand img {
+        width: 85%;       /* 다른 페이지들처럼 화면 가로를 85% 차지하면서 큼직하게 보입니다! */
+        height: auto;
+        display: block;   /* ⚡ 중요: 옆에 다른 사진이 못 오게 한 줄을 통째로 차지하게 만듭니다. */
+        margin: 20px auto; /* 한 줄에 한 장씩 가운데 정렬되도록 여백 주기 */
     }
 }
